@@ -9,6 +9,6 @@ module LuhnValidator
     w_sum = nums_a[0..-2].reverse_each.map.with_index { |d, i|
       i.even? ? LUHN_MAPPING[d] : d
     }.reduce(&:+)
-    -w_sum % 10 == nums_a[-1] % 10
+    -w_sum % 10 == nums_a[-1]
   end
 end
