@@ -1,7 +1,6 @@
-require './credit_card.rb'
-#
+# Include Caesar and Permutation
 module SubstitutionCipher
-  #
+  # Used for Caesar
   module Caesar
     # Encrypts document using key
     # Arguments:
@@ -21,7 +20,8 @@ module SubstitutionCipher
       # TODO: decrypt string using caesar cipher
     end
   end
-  #
+
+  # Used for Permutation
   module Permutation
     # Encrypts document using key
     # Arguments:
