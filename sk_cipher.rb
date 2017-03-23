@@ -16,7 +16,7 @@ module ModernSymmetricCipher
     # DO: Return an encrypted string
     #     Use base64 for ciphertext so that it is sendable as text
     simple_box = RbNaCl::SimpleBox.from_secret_key(Base64.decode64(key))
-    Base64.encode64(simple_box.encrypt(document))
+    Base64.encode64(simple_box.encrypt(document.to_s))
   end
 
   def self.decrypt(aes_crypt, key)
